@@ -1,0 +1,85 @@
+<ion-view view-title="Add Reviews">
+	<ion-nav-buttons side="Right">
+	  <button class="button button-clear ion-log-out" ng-click="logOut()"></button>
+	</ion-nav-buttons> 
+    <ion-content>
+
+	
+        
+		<div class="customItem">
+
+    	<angucomplete align="center" type="text" id="ex1" placeholder="Select Professor"  ng-model="reviewText.prof" pause="100" selectedobject="selectedProf" localdata="profList" searchfields="ProfName" titlefield="ProfName" minlength="1" inputclass="form-control form-control-small" matchclass="highlight" />
+    	</angucomplete>
+    	</div>
+		<div class="list list-inset">
+		  
+    	</angucomplete>
+    	<div>
+		  <label class="item">
+		    <input type="text" class="reviewTextArea" ng-model="reviewText.text"  placeholder="Your reviews here please..."/>
+		  </label>
+		</div>
+		<div class="row">
+			
+			<div class="col"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+		</div>
+		<div class="row">
+			<div class="col">
+			<button class="button button-positive" ng-click="submitReview(selectedProf.originalObject)">Submit Review</button></div>
+		</div>
+		    
+
+		
+       
+  
+		  
+		  
+	
+            
+      
+        <!--div class="" ng-show="selectedCountry">
+            You selected <span class="bold-span">{{selectedCountry.originalObject.name}}</span> which has a country code of <span class="bold-span">{{selectedCountry.originalObject.code}}</span>
+        </div-->
+
+
+    
+
+            
+
+            
+       <!--div class="list card">
+		  <div class="item item-avatar">
+		    <img src="mcfly.jpg">
+		    <h2>{{cou.Name}}</h2>
+		    <p>{{cou.Dept}}</p>
+		  </div>
+
+		  <div class="item item-body">
+		   
+		    <ionic-ratings ratingsobj='cou.Rating'></ionic-ratings>
+		    <p>
+		   
+		      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+		      the content is from a card-body consisting of an image and paragraph text. The footer
+		      consists of tabs, icons aligned left, within the card-footer.
+		    </p>
+		    <p align="center">
+		      <a href="#" class="subdued">1 Reviews</a>
+		      <a href="#" class="subdued">5 Comments</a>
+		    </p>
+		  </div>
+
+		  <div class="item tabs tabs-secondary tabs-icon-left">
+		    <a class="tab-item" href="#/tab/couReview/{{cou}}">
+		      <i class="icon ion-ios-book"></i>
+		      Reviews
+		    </a>
+		    <a class="tab-item" href="#">
+		      <i class="icon ion-thumbsup"></i>
+		      Add Reveiw
+		    </a>
+		    
+		  </div>
+  		</div-->
+	</ion-content>
+</ion-view>

@@ -3,5 +3,9 @@
   "private": "true",
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.1.0"
+  },
+  "dependencies": {
+    "ionic-ratings": "~0.2.0",
+    "angular-strap": "~2.3.5"
   }
 }

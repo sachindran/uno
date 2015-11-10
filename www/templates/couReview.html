@@ -1,0 +1,42 @@
+<ion-view view-title="Courses Review">
+	<ion-nav-buttons side="Right">
+	  <button class="button button-clear ion-log-out" ng-click="logOut()"></button>
+	</ion-nav-buttons> 
+    <ion-content>
+
+       <div class="list card" ng-repeat = "cou in couList">
+		  <div class="item item-avatar">
+		    <img src="mcfly.jpg">
+		    <h2>{{cou.Name}}</h2>
+		    <p>{{cou.Dept}}</p>
+		  </div>
+
+		  <div class="item item-body">
+		    <!--img class="full-image" src="delorean.jpg"-->
+		    <ionic-ratings ratingsobj='cou.Rating'></ionic-ratings>
+		    <p>
+		   
+		      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+		      the content is from a card-body consisting of an image and paragraph text. The footer
+		      consists of tabs, icons aligned left, within the card-footer.
+		    </p>
+		    <p align="center">
+		      <a href="#" class="subdued">1 Reviews</a>
+		      <!--a href="#" class="subdued">5 Comments</a-->
+		    </p>
+		  </div>
+
+		  <div class="item tabs tabs-secondary tabs-icon-left">
+		    <a class="tab-item" href="#/tab/couReview/{{cou}}">
+		      <i class="icon ion-ios-book"></i>
+		      Reviews
+		    </a>
+		    <a class="tab-item" href="#">
+		      <i class="icon ion-thumbsup"></i>
+		      Add Reveiw
+		    </a>
+		    
+		  </div>
+  		</div>
+	</ion-content>
+</ion-view>

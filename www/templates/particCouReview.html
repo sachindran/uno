@@ -1,0 +1,58 @@
+<ion-view view-title="">
+	<ion-nav-buttons side="Right">
+	  <button class="button button-clear ion-log-out" ng-click="logOut()"></button>
+	</ion-nav-buttons> 
+    <ion-content>
+    	
+       <div class="list card">
+		  <div align="center" class="item">
+
+		    <h1>{{couData.Name}}</h1>
+		    <p>{{couData.Dept}}</p>
+		  </div>
+
+		  <div class="item item-body">
+		    <!--img class="full-image" src="delorean.jpg"-->
+		    <ionic-ratings ratingsobj='couData.Rating'></ionic-ratings>
+		    <p>
+		   
+		      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+		      the content is from a card-body consisting of an image and paragraph text. The footer
+		      consists of tabs, icons aligned left, within the card-footer.
+		    </p>
+		    <p align="center">
+		      <a href="#" class="subdued">{{couReviewsList.length}} Reviews</a>
+		      <!--a href="#" class="subdued">5 Comments</a-->
+		    </p>
+		  </div>
+
+		
+  		</div>
+
+  		<!--Reviews part-->
+
+  		<div class="list card" ng-repeat = "reviews in couReviewsList">
+		  <div class="item item-avatar">
+		    <img src="mcfly.jpg">
+		    <h3>{{reviews.User}}</h3>
+		    
+		  </div>
+
+		  <div class="item item-body">
+		    <!--img class="full-image" src="delorean.jpg"-->
+		    <p>
+		   
+		      {{reviews.Comments}}
+		    </p>
+		    <ionic-ratings class="reviews_stars" ratingsobj='reviews.Rating'></ionic-ratings>
+		    
+		    <p align="center">
+		      <a href="#" class="subdued">1 Reviews</a>
+		      <!--a href="#" class="subdued">5 Comments</a-->
+		    </p>
+		  </div>
+
+		  
+  		</div>
+	</ion-content>
+</ion-view>

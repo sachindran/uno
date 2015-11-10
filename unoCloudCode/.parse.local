@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "uno"
+    },
+    "uno": {
+      "applicationId": "8HQ1HtctC84oTRwbKdBFCpYXsUb3NFs51c0hFLMB"
+    }
+  }
+}

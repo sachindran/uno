@@ -1,0 +1,33 @@
+<ion-view view-title="Navigate">
+	<ion-nav-buttons side="Right">
+	  <button class="button button-clear ion-log-out" ng-click="logOut()"></button>
+
+	</ion-nav-buttons> 
+	<!--ion-nav-buttons side="Left">
+		<button ng-click="centerOnMe()" class="button button-icon icon ion-navigate"></button>
+	</ion-nav-buttons-->
+    <ion-content>
+    <!--{{initMap()}}-->
+    <!--div class="row">
+    
+    <div class="col">
+    <input id="destination-input" class="controls" type="text"
+        placeholder="Enter a destination location">
+    </div>
+    </div>
+
+    <div id="mode-selector" class="controls">
+      <input type="radio" name="type" id="changemode-walking" checked="checked">
+      <label for="changemode-walking">Walking</label>
+
+      <input type="radio" name="type" id="changemode-transit">
+      <label for="changemode-transit">Transit</label>
+
+      <input type="radio" name="type" id="changemode-driving">
+      <label for="changemode-driving">Driving</label>
+    </div>
+
+    <div on-create="initMap()" id="map"></div-->
+     <map on-create="mapCreated(map)"></map>
+    </ion-content>
+</ion-view>
